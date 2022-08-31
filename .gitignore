@@ -1,0 +1,8 @@
+.vscode
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+src.zip
+Brewfile.lock.json
+.envrc_local
