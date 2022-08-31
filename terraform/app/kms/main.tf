@@ -4,7 +4,7 @@ terraform {
     bucket         = "rojopolis-tf"
     key            = "rojopolis-kms"
     region         = "us-east-1"
-    dynamodb_table = "rojopolis-terraform-locks"
+    dynamodb_table = "rojopolis-terraform-lock"
   }
 }
 
