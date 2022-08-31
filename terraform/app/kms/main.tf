@@ -4,7 +4,7 @@ terraform {
     bucket         = "rojopolis-tf"
     key            = "rojopolis-kms"
     region         = "us-east-1"
-    dynamodb_table = "rojopolis-terraform-lock"
+    dynamodb_table = "rojopolis-terraform-locks"
   }
 }
 
@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 locals {
-  environment_slug = "${lower(terraform.workspace)}"
+  environment_slug = lower(terraform.workspace)
 }
 
 resource "aws_kms_key" "rojopolis_key" {
@@ -23,5 +23,5 @@ resource "aws_kms_key" "rojopolis_key" {
 
 resource "aws_kms_alias" "rojopolis_key_alias" {
   name          = "alias/rojopolis-key_${local.environment_slug}"
-  target_key_id = "${aws_kms_key.rojopolis_key.key_id}"
+  target_key_id = aws_kms_key.rojopolis_key.key_id
 }
