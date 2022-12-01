@@ -1,0 +1,2 @@
+variable "parameter" {}
+variable "region" {}

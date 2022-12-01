@@ -1,0 +1,28 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "amazonwebservices.aws-toolkit-vscode",
+                "Bridgecrew.checkov",
+                "hashicorp.hcl",
+                "hashicorp.terraform",
+                "hashicorp.sentinel",
+                "jock.svg",
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "ms-vscode.makefile-tools",
+                "SimonSiefke.svg-preview",
+                "Trunk.io"
+            ],
+            "settings": {}
+        }
+    },
+    "features": {
+        "ghcr.io/bananalab/devcontainer-features/aws-cli:latest": {},
+        "ghcr.io/bananalab/devcontainer-features/checkov:latest": {},
+        "ghcr.io/bananalab/devcontainer-features/direnv:latest": {},
+        "ghcr.io/bananalab/devcontainer-features/gomplate:latest": {},
+        "ghcr.io/bananalab/devcontainer-features/pre-commit:latest": {},
+        "ghcr.io/bananalab/devcontainer-features/terraform-tools:latest": {}
+    },
+    "image": "mcr.microsoft.com/devcontainers/universal:2"
+}
