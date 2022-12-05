@@ -1,5 +1,9 @@
 # Set up your development environment.
 
+## Devcontainer
+This project uses a [ devcontainer ]( https://code.visualstudio.com/docs/devcontainers/containers ) to provide a consistent experience across all platforms.
+If you're using VS Code simple click 'Open in DevContainer' to use an environment with all dependencies pre-installed.
+
 ## Code editor
 Like most development environments Terraform is completely text based.  Therefore you will need a text editor.  In this class we'll be using Microsoft VSCode.
 

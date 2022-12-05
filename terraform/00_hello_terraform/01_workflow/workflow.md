@@ -6,15 +6,19 @@ The core Terraform workflow consists of 3 phases:
      Infrastructure code is written in Terraform's DSL called Hashicorp
      configuration Language (HCL).
 
-2. Plan
+2. Initialize
+
+     Before Terraform can run it must download its dependencies.
+
+3. Plan
 
      Before Terraform modifies resources it creates an action plan outlining
      changes required.
 
-3. Apply
+4. Apply
 
      Becuase Terraform uses a declarative model changes are applied rather
-     executed.
+     than executed.
 
 Try it:
 
