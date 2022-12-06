@@ -6,6 +6,7 @@
 # TIP: setting `count = 0` is a handy way to remove a resource but keep the config.
 resource "aws_s3_bucket" "count_buckets" {
   count  = 1
+  # count = var.create_bucket == true ? 1 : 0
   bucket = "${data.aws_caller_identity.current.account_id}-bucket${count.index}"
 }
 
