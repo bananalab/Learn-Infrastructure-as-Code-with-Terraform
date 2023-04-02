@@ -54,7 +54,7 @@ resource "aws_s3_bucket" "bucket_more_static_blocks" {
   }
 }
 
-# Dynamin blocks allow us to generate configuration from expressions.
+# Dynamic blocks allow us to generate configuration from expressions.
 resource "aws_s3_bucket" "bucket_dynamic_blocks" {
   dynamic "lifecycle_rule" {
     for_each = range(100)

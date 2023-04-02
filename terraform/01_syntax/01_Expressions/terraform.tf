@@ -129,7 +129,7 @@ locals {
   EOT
 }
 
-local {
+locals {
   template = <<-EOT
     This is a `heredoc` with directives.
     %{if local.person.name == ""}

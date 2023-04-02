@@ -24,7 +24,7 @@ locals {
 variable "complex" {
   type = object({
     name = string
-    //aliases = optional(list(string), []) available as experimental feature. GA in 1.3.0
+    aliases = optional(list(string), []) available as experimental feature. GA in 1.3.0
   })
   description = <<-EOT
     A complex variable.
