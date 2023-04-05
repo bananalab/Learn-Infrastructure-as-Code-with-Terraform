@@ -24,7 +24,7 @@ locals {
 variable "complex" {
   type = object({
     name = string
-    aliases = optional(list(string), []) available as experimental feature. GA in 1.3.0
+    aliases = optional(list(string), [])
   })
   description = <<-EOT
     A complex variable.
@@ -58,4 +58,8 @@ variable "valid_bucket_name" {
 # Outputs can be retrieved at any time by running `terraform output`
 output "bucket_info" {
   value = local.bucket_name_local
+}
+
+output "complex" {
+  value = var.complex
 }
