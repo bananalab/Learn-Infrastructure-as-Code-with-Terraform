@@ -1,28 +1,18 @@
 {
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "amazonwebservices.aws-toolkit-vscode",
-                "Bridgecrew.checkov",
-                "hashicorp.hcl",
-                "hashicorp.terraform",
-                "hashicorp.sentinel",
-                "jock.svg",
-                "ms-kubernetes-tools.vscode-kubernetes-tools",
-                "ms-vscode.makefile-tools",
-                "SimonSiefke.svg-preview",
-                "Trunk.io"
-            ],
-            "settings": {}
-        }
-    },
-    "features": {
-        "ghcr.io/bananalab/devcontainer-features/aws-cli:latest": {},
-        "ghcr.io/bananalab/devcontainer-features/checkov:latest": {},
-        "ghcr.io/bananalab/devcontainer-features/direnv:latest": {},
-        "ghcr.io/bananalab/devcontainer-features/gomplate:latest": {},
-        "ghcr.io/bananalab/devcontainer-features/pre-commit:latest": {},
-        "ghcr.io/bananalab/devcontainer-features/terraform-tools:latest": {}
-    },
-    "image": "mcr.microsoft.com/devcontainers/universal:2"
+  "name": "DevOps Bootcamp",
+  "image": "bananalab/devcontainer:dab2d10",
+  "mounts": [
+      "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
+  "containerUser": "bootcamp",
+  "remoteUser": "bootcamp",
+  "customizations": {
+    "vscode": {
+        "extensions": [
+            "hashicorp.hcl",
+            "hashicorp.terraform"
+        ],
+        "settings": {}
+    }
+  }
 }
