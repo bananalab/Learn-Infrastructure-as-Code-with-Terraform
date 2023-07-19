@@ -1,11 +1,11 @@
 {
-  "name": "DevOps Bootcamp",
-  "image": "bananalab/devcontainer:dab2d10",
+  "name": "devcontainer",
+  "image": "bananalab/devcontainer:d65e7f3",
   "mounts": [
       "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ],
-  "containerUser": "bootcamp",
-  "remoteUser": "bootcamp",
+  "containerUser": "devcontainer",
+  "remoteUser": "devcontainer",
   "customizations": {
     "vscode": {
         "extensions": [
