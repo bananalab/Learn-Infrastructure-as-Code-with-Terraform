@@ -1,6 +1,6 @@
 {
   "name": "devcontainer",
-  "image": "bananalab/devcontainer:d65e7f3",
+  "image": "bananalab/devcontainer",
   "mounts": [
       "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ],
@@ -12,7 +12,10 @@
             "hashicorp.hcl",
             "hashicorp.terraform"
         ],
-        "settings": {}
+        "settings": {
+          "editor.formatOnPaste": true,
+          "editor.formatOnSave": true
+        }
     }
   }
 }
